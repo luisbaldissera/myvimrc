@@ -42,10 +42,18 @@ let g:gruvbox_contrast_dark='hard'
 let g:gruvbox_contrast_light='soft'
 set bg=dark
 " General view configurations
+set backup
+if has('persistent_undo')
+    set undofile
+endif
+if has('autocmd')
+    autocmd FileType text setlocal textwidth=80
+endif
 set number
 set shiftwidth=4
 set expandtab
 set tabstop=4
 set smartindent
 set hlsearch
+set history=64
 filetype plugin on
