@@ -1,0 +1,36 @@
+[submodule "/home/luis/.vim/pack/plugins/start/coc.nvim"]
+	path = /home/luis/.vim/pack/plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "/home/luis/.vim/pack/plugins/start/emmet-vim"]
+	path = /home/luis/.vim/pack/plugins/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "/home/luis/.vim/pack/plugins/start/fzf"]
+	path = /home/luis/.vim/pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "/home/luis/.vim/pack/plugins/start/goyo.vim"]
+	path = /home/luis/.vim/pack/plugins/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
+[submodule "/home/luis/.vim/pack/plugins/start/vim-airline"]
+	path = /home/luis/.vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "/home/luis/.vim/pack/plugins/start/vim-airline-themes"]
+	path = /home/luis/.vim/pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "/home/luis/.vim/pack/plugins/start/vim-css-color"]
+	path = /home/luis/.vim/pack/plugins/start/vim-css-color
+	url = https://github.com/ap/vim-css-color
+[submodule "/home/luis/.vim/pack/plugins/start/vim-FIGlet"]
+	path = /home/luis/.vim/pack/plugins/start/vim-FIGlet
+	url = https://github.com/fadein/vim-FIGlet
+[submodule "/home/luis/.vim/pack/plugins/start/vim-javascript"]
+	path = /home/luis/.vim/pack/plugins/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "/home/luis/.vim/pack/styles/start/gruvbox"]
+	path = /home/luis/.vim/pack/styles/start/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "/home/luis/.vim/pack/styles/start/molokai"]
+	path = /home/luis/.vim/pack/styles/start/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "/home/luis/.vim/pack/styles/start/vim-theme-papaya"]
+	path = /home/luis/.vim/pack/styles/start/vim-theme-papaya
+	url = https://github.com/HenryNewcomer/vim-theme-papaya
