@@ -29,21 +29,17 @@ set tabstop=4
 set shiftwidth=4
 set bg=dark
 
-map <silent> <C-p> :FZF<CR>
 map <C-c> :FIGlet -ct -f term<CR>
 map <C-k> ddkP
 map <C-j> ddp
-map <C-Down> <C-j>
 map <F2> :FIGlet -t<CR>
+map <C-p> :FZF<CR>
+map <C-Up> <C-k>
+map <C-Down> <C-j>
 map <silent> <C-d> :botright terminal<CR>
-map <silent> <C-Up> <C-k>
 map <silent> <C-t> :tabnew .<CR>
 map <silent> <Tab> :tabnext<CR>
 map <silent> <S-Tab> :tabprevious<CR>
-map <silent> <C-k>z :Goyo<CR>
-
-xmap <C-k> dkP
-xmap <C-j> dp
 
 colorscheme gruvbox
 
