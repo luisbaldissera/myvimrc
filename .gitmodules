@@ -1,36 +1,42 @@
-[submodule "./pack/plugins/start/coc.nvim"]
-	path = ./pack/plugins/start/coc.nvim
+[submodule "pack/plugins/start/coc.nvim"]
+	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
-[submodule "./pack/plugins/start/emmet-vim"]
-	path = ./pack/plugins/start/emmet-vim
+[submodule "pack/plugins/start/emmet-vim"]
+	path = pack/plugins/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
-[submodule "./pack/plugins/start/fzf"]
-	path = ./pack/plugins/start/fzf
+[submodule "pack/plugins/start/fzf"]
+	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf
-[submodule "./pack/plugins/start/goyo.vim"]
-	path = ./pack/plugins/start/goyo.vim
+[submodule "pack/plugins/start/goyo.vim"]
+	path = pack/plugins/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
-[submodule "./pack/plugins/start/vim-airline"]
-	path = ./pack/plugins/start/vim-airline
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "./pack/plugins/start/vim-airline-themes"]
-	path = ./pack/plugins/start/vim-airline-themes
+[submodule "pack/plugins/start/vim-airline-themes"]
+	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "./pack/plugins/start/vim-css-color"]
-	path = ./pack/plugins/start/vim-css-color
+[submodule "pack/plugins/start/vim-css-color"]
+	path = pack/plugins/start/vim-css-color
 	url = https://github.com/ap/vim-css-color
-[submodule "./pack/plugins/start/vim-FIGlet"]
-	path = ./pack/plugins/start/vim-FIGlet
+[submodule "pack/plugins/start/vim-FIGlet"]
+	path = pack/plugins/start/vim-FIGlet
 	url = https://github.com/fadein/vim-FIGlet
-[submodule "./pack/plugins/start/vim-javascript"]
-	path = ./pack/plugins/start/vim-javascript
+[submodule "pack/plugins/start/vim-javascript"]
+	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule "./pack/styles/start/gruvbox"]
-	path = ./pack/styles/start/gruvbox
+[submodule "pack/styles/start/gruvbox"]
+	path = pack/styles/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
-[submodule "./pack/styles/start/molokai"]
-	path = ./pack/styles/start/molokai
+[submodule "pack/styles/start/molokai"]
+	path = pack/styles/start/molokai
 	url = https://github.com/tomasr/molokai
-[submodule "./pack/styles/start/vim-theme-papaya"]
-	path = ./pack/styles/start/vim-theme-papaya
+[submodule "pack/styles/start/vim-theme-papaya"]
+	path = pack/styles/start/vim-theme-papaya
 	url = https://github.com/HenryNewcomer/vim-theme-papaya
+[submodule "pack/plugins/start/ultisnips"]
+	path = pack/plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "pack/snippets/start/vim-snippets"]
+	path = pack/snippets/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
