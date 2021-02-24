@@ -19,6 +19,10 @@ let g:goyo_width = '90%'
 let g:goyo_height = '90%'
 let g:goyo_linenr = 0
 
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
 set hidden
 set nobackup
 set cmdheight=2
