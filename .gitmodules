@@ -39,4 +39,4 @@
 	url = https://github.com/SirVer/ultisnips
 [submodule "pack/snippets/start/vim-snippets"]
 	path = pack/snippets/start/vim-snippets
-	url = https://github.com/honza/vim-snippets
+	url = https://github.com/luisbaldissera/vim-snippets
