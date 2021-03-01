@@ -23,9 +23,11 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+set hlsearch
+set incsearch
 set hidden
 set nobackup
-set cmdheight=2
+set cmdheight=1
 
 set number
 set expandtab
@@ -33,17 +35,12 @@ set tabstop=4
 set shiftwidth=4
 set bg=dark
 
-map <C-c> :FIGlet -ct -f term<CR>
 map <C-k> ddkP
 map <C-j> ddp
-map <F2> :FIGlet -t<CR>
-map <C-p> :FZF<CR>
 map <C-Up> <C-k>
 map <C-Down> <C-j>
-map <silent> <C-d> :botright terminal<CR>
-map <silent> <C-t> :tabnew .<CR>
-map <silent> <Tab> :tabnext<CR>
-map <silent> <S-Tab> :tabprevious<CR>
+map <C-p> :FZF<CR>
+map g<Tab> :tabnew .<CR>
 
 colorscheme gruvbox
 
