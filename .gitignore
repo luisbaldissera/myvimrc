@@ -3,4 +3,4 @@ sessions/
 .*
 !.gitignore
 !.gitmodules
-!.git/
+!.github/
