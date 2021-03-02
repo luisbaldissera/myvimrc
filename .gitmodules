@@ -40,3 +40,6 @@
 [submodule "pack/syntax/start/vim-pandoc-syntax"]
 	path = pack/syntax/start/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax
+[submodule "pack/syntax/start/vim-css-color"]
+	path = pack/syntax/start/vim-css-color
+	url = https://github.com/ap/vim-css-color
