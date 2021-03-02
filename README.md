@@ -20,7 +20,7 @@ If you have a fresh vim instalation:
 
 * Clone recursively this repo to your `.vim` folder:
 
-```
+```sh
 cd $HOME
 git clone --recurse-submodules \
     https://github.com/luisbaldissera/myvimrc .vim
