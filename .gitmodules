@@ -16,9 +16,6 @@
 [submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "pack/plugins/start/vim-FIGlet"]
-	path = pack/plugins/start/vim-FIGlet
-	url = https://github.com/fadein/vim-FIGlet
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
@@ -31,12 +28,6 @@
 [submodule "pack/styles/start/vim-theme-papaya"]
 	path = pack/styles/start/vim-theme-papaya
 	url = https://github.com/HenryNewcomer/vim-theme-papaya
-[submodule "pack/plugins/start/ultisnips"]
-	path = pack/plugins/start/ultisnips
-	url = https://github.com/SirVer/ultisnips
-[submodule "pack/plugins/start/vim-snippets"]
-	path = pack/plugins/start/vim-snippets
-	url = https://github.com/honza/vim-snippets
 [submodule "pack/syntax/start/vim-pandoc-syntax"]
 	path = pack/syntax/start/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax
