@@ -31,12 +31,17 @@ set incsearch
 set hidden
 set nobackup
 set cmdheight=1
-
 set number
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set bg=dark
+
+set listchars+=tab:>>
+set listchars+=trail:-
+set listchars+=precedes:%
+set listchars+=extends:@
+set nolist
 
 map <C-k> ddkP
 map <C-j> ddp
@@ -45,9 +50,14 @@ map <C-Down> <C-j>
 map <C-p> :FZF<CR>
 map g<Tab> :tabnew .<CR>
 
+packadd! matchit
+packadd! shellmenu
+packadd! justify
+
 colorscheme gruvbox
 
-augroup html
+augroup vimau
     au!
     autocmd FileType html setlocal nowrap
+    autocmd FileType md,pandoc,plain setlocal list
 augroup end
