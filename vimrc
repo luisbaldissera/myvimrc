@@ -47,3 +47,7 @@ map g<Tab> :tabnew .<CR>
 
 colorscheme gruvbox
 
+augroup html
+    au!
+    autocmd FileType html setlocal nowrap
+augroup end
