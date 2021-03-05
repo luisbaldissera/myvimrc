@@ -23,7 +23,10 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
-set hlsearch
+if &t_Co > 2 || has("gui_running")
+    set hlsearch
+endif
+
 set incsearch
 set hidden
 set nobackup
