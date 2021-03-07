@@ -1,8 +1,32 @@
-sessions/
+# Python
+venv/
+*__pycache__*
+
+# Backup files
 *.bak
 
+# Vim
+.vim/
+.*.swp
+*~
+*.orig
+
+# VS Code
+.vscode/
+
+# Idea
+.idea/
+
+# Hidden files
 .*
+
+# Github
+!.github/
+
+# Git
 !.gitignore
 !.gitmodules
-!.github/
+
+# Custom
 !snippets/.snippets
+sessions/
