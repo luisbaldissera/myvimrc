@@ -1,6 +1,8 @@
 sessions/
+*.bak
 
 .*
 !.gitignore
 !.gitmodules
 !.github/
+!snippets/.snippets
