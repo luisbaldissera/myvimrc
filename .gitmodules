@@ -43,3 +43,6 @@
 [submodule "pack/syntax/start/vim-css-color"]
 	path = pack/syntax/start/vim-css-color
 	url = https://github.com/ap/vim-css-color
+[submodule "pack/plugins/start/vim-netrw-gitignore"]
+	path = pack/plugins/start/vim-netrw-gitignore
+	url = git@github.com:luisbaldissera/vim-netrw-gitignore.git
