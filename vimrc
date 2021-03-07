@@ -4,6 +4,8 @@ source $VIMRUNTIME/defaults.vim
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
 let g:netrw_localcopycmd = "cp"
+" In development...
+let g:netrw_gitignore_enabled = 1
 
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_conceal_arrow_function = "⇒"
