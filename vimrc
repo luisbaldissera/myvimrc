@@ -23,6 +23,10 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+if &t_Co > 1
+    syntax enable
+endif
+
 if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
