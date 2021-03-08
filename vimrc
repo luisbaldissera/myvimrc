@@ -46,6 +46,8 @@ set listchars+=tab:>>
 set listchars+=trail:-
 set listchars+=precedes:%
 set listchars+=extends:@
+set splitbelow
+set splitright
 set nolist
 
 map <C-k> ddkP
