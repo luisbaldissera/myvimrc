@@ -44,7 +44,6 @@ set shiftwidth=4
 set bg=dark
 set backup
 set backupext=.bak
-set patchmode=.orig
 set listchars+=tab:>>
 set listchars+=trail:-
 set listchars+=precedes:%
