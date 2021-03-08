@@ -22,14 +22,14 @@
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule "pack/styles/start/gruvbox"]
-	path = pack/styles/start/gruvbox
+[submodule "pack/colors/start/gruvbox"]
+	path = pack/colors/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
-[submodule "pack/styles/start/molokai"]
-	path = pack/styles/start/molokai
+[submodule "pack/colors/start/molokai"]
+	path = pack/colors/start/molokai
 	url = https://github.com/tomasr/molokai
-[submodule "pack/styles/start/vim-theme-papaya"]
-	path = pack/styles/start/vim-theme-papaya
+[submodule "pack/colors/start/vim-theme-papaya"]
+	path = pack/colors/start/vim-theme-papaya
 	url = https://github.com/HenryNewcomer/vim-theme-papaya
 [submodule "pack/plugins/start/ultisnips"]
 	path = pack/plugins/start/ultisnips
