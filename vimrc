@@ -42,8 +42,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set bg=dark
-set backup
-set backupext=.bak
 set listchars+=tab:>>
 set listchars+=trail:-
 set listchars+=precedes:%
