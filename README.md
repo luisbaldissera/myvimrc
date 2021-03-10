@@ -8,6 +8,7 @@ reconfigure vim. But you opensourcer are free to use it as you wish 😊.
 * Fuzzy Finder
 * FIGlet
 * Development Tools
+* Arduino Software. Visit https://www.arduino.cc/
 
 ```sh
 sudo apt-get update && sudo apt-get upgrade -y
