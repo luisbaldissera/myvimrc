@@ -49,21 +49,22 @@ set listchars+=extends:@
 set splitbelow
 set splitright
 set nolist
+set foldmethod=indent
+set foldlevelstart=999
 
 map <C-p> :FZF<CR>
 map g<Tab> :tabnew .<CR>
+
+" Cancel hlsearch
+map <silent> <Esc><Esc> :nohlsearch<CR>
 
 " Moving lines
 nmap <C-k> :move .-2<CR>==
 nmap <C-j> :move .+1<CR>==
 nmap <C-Up> <C-k>
 nmap <C-Down> <C-j>
-imap <C-k> <Esc>:move .-2<CR>==gi
-imap <C-j> <Esc>:move .+1<CR>==gi
-imap <C-Up> <C-k>
-imap <C-Down> <C-j>
-vmap <C-k> :move .-2<CR>==gv
-vmap <C-j> :move '>+1<CR>==gv
+vmap <C-k> :global/^/move .-2<CR>==gv
+vmap <C-j> :global/^/move '>+1<CR>==gv
 vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
