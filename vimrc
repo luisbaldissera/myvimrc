@@ -54,9 +54,7 @@ set foldlevelstart=999
 
 map <C-p> :FZF<CR>
 map g<Tab> :tabnew .<CR>
-
-" Cancel hlsearch
-map <silent> <Esc><Esc> :nohlsearch<CR>
+map <F2> :.!figlet<CR>
 
 " Moving lines
 nmap <C-k> :move .-2<CR>==
