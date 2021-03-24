@@ -49,3 +49,6 @@
 [submodule "pack/plugins/opt/unicode.vim"]
 	path = pack/plugins/opt/unicode.vim
 	url = https://github.com/chrisbra/unicode.vim
+[submodule "pack/plugins/start/vim-dirdiff"]
+	path = pack/plugins/start/vim-dirdiff
+	url = https://github.com/will133/vim-dirdiff
