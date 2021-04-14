@@ -27,6 +27,7 @@ venv/
 !.gitignore
 !.gitmodules
 
-# Custom
+# Custom Vim configuration
 !snippets/.snippets
 sessions/
+views/
