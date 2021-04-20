@@ -1,7 +1,16 @@
 snippet gitignore "Default gitignore file"
+	# Environment file
+	.env
+
 	# Python
-	venv/
-	*__pycache__*
+	.venv/
+	*/__pycache__/*
+
+	# NPM (JavaScript)
+	node_modules/
+
+	# Composer (PHP)
+	vendor/
 
 	# Backup files
 	*.bak
@@ -18,9 +27,6 @@ snippet gitignore "Default gitignore file"
 	# Idea
 	.idea/
 
-	# Hidden files
-	.*
-
 	# Github
 	!.github/
 
@@ -28,4 +34,3 @@ snippet gitignore "Default gitignore file"
 	!.gitignore
 	!.gitmodules
 
-	
