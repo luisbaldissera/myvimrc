@@ -61,3 +61,6 @@
 [submodule "pack/plugins/start/vim-commentary"]
 	path = pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/syntax/start/vim-rails"]
+	path = pack/syntax/start/vim-rails
+	url = https://github.com/tpope/vim-rails
