@@ -25,6 +25,23 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
+" Coc default extensiosn
+let g:coc_global_extensions = [
+  \   'coc-css',
+  \   'coc-docker',
+  \   'coc-git',
+  \   'coc-html',
+  \   'coc-tabnine',
+  \   'coc-yaml',
+  \   'coc-tsserver',
+  \   'coc-sql',
+  \   'coc-xml',
+  \   'coc-json',
+  \   'coc-java',
+  \   'coc-go',
+  \   'coc-solargraph'
+  \ ]
+
 if &t_Co > 1
     syntax enable
 endif
@@ -39,8 +56,10 @@ set nobackup
 set cmdheight=1
 set number
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set sessionoptions+=resize
+set laststatus=2
 set bg=dark
 set listchars+=tab:>>
 set listchars+=trail:-
@@ -52,8 +71,7 @@ set nolist
 set foldmethod=indent
 set foldlevelstart=999
 
-map <C-p> :FZF<CR>
-map g<Tab> :tabnew .<CR>
+nmap <C-p> :FZF<CR>
 
 " Figlet
 nmap <F2> :.!figlet<CR>
@@ -69,6 +87,20 @@ vmap <C-j> :global/^/move '>+1<CR>==gv
 vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
+" Navigating in args
+map <C-l> :next<CR>
+map <C-h> :prev<CR>
+map <C-Left> <C-h>
+map <C-Right> <C-l>
+
+" Managing Tabs
+map <Tab>n :tabnew .<CR>
+map <Tab>c :tabclose<CR>
+map <Tab>h :-tabmove<CR>
+map <Tab>l :+tabmove<CR>
+map <Tab><Left> <Tab>h
+map <Tab><Right> <Tab>l
+
 packadd! matchit
 packadd! shellmenu
 packadd! justify
@@ -79,4 +111,11 @@ augroup vimau
     au!
     autocmd FileType html setlocal nowrap
     autocmd FileType md,pandoc,plain setlocal list
+    autocmd VimEnter,WinEnter * if !exists('w:_vsc_conflict_marker_match') |
+        \   let w:_vsc_conflict_marker_match = matchadd('ErrorMsg', '^\(<\|=\||\|>\)\{7\}\([^=].\+\)\?$') |
+        \ endif
 augroup end
+
+map <F2> :diffget 1<CR>
+map <F8> :diffget 2<CR>
+" map <F5> :wqa<CR>
