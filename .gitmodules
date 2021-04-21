@@ -61,3 +61,6 @@
 [submodule "pack/syntax/start/vim-rails"]
 	path = pack/syntax/start/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/dense-analysis/ale
