@@ -4,27 +4,28 @@ source $VIMRUNTIME/defaults.vim
 filetype plugin on
 filetype plugin indent on
 
+let g:goyo_height = '90%'
+let g:goyo_linenr = 0
+let g:goyo_width = '90%'
+
+let g:gruvbox_italic = 1
+
+let g:javascript_conceal_arrow_function = "⇒"
+let g:javascript_conceal_function = "ƒ"
+let g:javascript_conceal_return = "⇚"
+let g:javascript_plugin_jsdoc = 1
+
+let g:molokai_original = 1
+
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
 let g:netrw_localcopycmd = "cp"
 
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_conceal_arrow_function = "⇒"
-let g:javascript_conceal_function = "ƒ"
-let g:javascript_conceal_return = "⇚"
-
-let g:molokai_original = 1
 let g:rehash256 = 1
 
-let g:gruvbox_italic = 1
-
-let g:goyo_width = '90%'
-let g:goyo_height = '90%'
-let g:goyo_linenr = 0
-
 let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
 
 " Coc default extensiosn
 let g:coc_global_extensions = [
@@ -68,12 +69,14 @@ set matchtime=0
 set nobackup
 set nolist
 set number
+set path+=**
 set sessionoptions+=resize
 set shiftwidth=2
 set showmatch
 set splitbelow
 set splitright
 set tabstop=2
+set wildmenu
 
 nmap <C-p> :FZF<CR>
 
