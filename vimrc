@@ -27,7 +27,6 @@ let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Coc default extensiosn
-let b:coc_suggest_disable = 1
 let g:coc_global_extensions = [
   \   'coc-css',
   \   'coc-docker',
