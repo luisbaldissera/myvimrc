@@ -1,11 +1,12 @@
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
+filetype plugin on
+filetype plugin indent on
+
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
 let g:netrw_localcopycmd = "cp"
-" In development...
-let g:netrw_gitignore_enabled = 1
 
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_conceal_arrow_function = "⇒"
@@ -26,6 +27,7 @@ let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 " Coc default extensiosn
+let b:coc_suggest_disable = 1
 let g:coc_global_extensions = [
   \   'coc-css',
   \   'coc-docker',
@@ -50,26 +52,29 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
 
-set incsearch
-set hidden
-set nobackup
-set cmdheight=1
-set number
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set sessionoptions+=resize
-set laststatus=2
 set bg=dark
+set cmdheight=1
+set expandtab
+set foldlevelstart=999
+set foldmethod=indent
+set hidden
+set ignorecase
+set incsearch
+set laststatus=2
+set listchars+=extends:@
+set listchars+=precedes:%
 set listchars+=tab:>>
 set listchars+=trail:-
-set listchars+=precedes:%
-set listchars+=extends:@
+set matchtime=0
+set nobackup
+set nolist
+set number
+set sessionoptions+=resize
+set shiftwidth=2
+set showmatch
 set splitbelow
 set splitright
-set nolist
-set foldmethod=indent
-set foldlevelstart=999
+set tabstop=2
 
 nmap <C-p> :FZF<CR>
 
@@ -105,12 +110,11 @@ packadd! matchit
 packadd! shellmenu
 packadd! justify
 
-colorscheme gruvbox
-
 augroup vimau
     au!
     autocmd FileType html setlocal nowrap
-    autocmd FileType md,pandoc,plain setlocal list
+    autocmd FileType markdown,pandoc,plain setlocal list
+    autocmd FileType markdown setlocal syntax=pandoc
     autocmd VimEnter,WinEnter * if !exists('w:_vsc_conflict_marker_match') |
         \   let w:_vsc_conflict_marker_match = matchadd('ErrorMsg', '^\(<\|=\||\|>\)\{7\}\([^=].\+\)\?$') |
         \ endif
@@ -119,3 +123,6 @@ augroup end
 map <F2> :diffget 1<CR>
 map <F8> :diffget 2<CR>
 " map <F5> :wqa<CR>
+
+colorscheme gruvbox
+
