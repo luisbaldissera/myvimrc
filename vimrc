@@ -27,22 +27,34 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 
+" Assynchronous Linting Engine (ALE)
+let g:ale_completion_autoimport = 1
+let g:ale_linters = {
+\   'javascript': [ 'eslint' ],
+\   'python': [ 'pylint' ]
+\}
+let g:ale_fixers = {
+\   'javascript': ['eslint', 'prettier']
+\}
+
 " Coc default extensiosn
 let g:coc_global_extensions = [
-  \   'coc-css',
-  \   'coc-docker',
-  \   'coc-git',
-  \   'coc-html',
-  \   'coc-tabnine',
-  \   'coc-yaml',
-  \   'coc-tsserver',
-  \   'coc-sql',
-  \   'coc-xml',
-  \   'coc-json',
-  \   'coc-java',
-  \   'coc-go',
-  \   'coc-solargraph'
-  \ ]
+\   'coc-css',
+\   'coc-docker',
+\   'coc-git',
+\   'coc-html',
+\   'coc-tabnine',
+\   'coc-yaml',
+\   'coc-tsserver',
+\   'coc-sql',
+\   'coc-xml',
+\   'coc-json',
+\   'coc-java',
+\   'coc-go',
+\   'coc-solargraph'
+\]
+
+let &t_ut = ''
 
 if &t_Co > 1
     syntax enable
@@ -69,6 +81,7 @@ set matchtime=0
 set nobackup
 set nolist
 set number
+set omnifunc=ale#completion#OmniFunc
 set path+=**
 set sessionoptions+=resize
 set shiftwidth=2
@@ -95,8 +108,8 @@ vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
 " Navigating in args
-map <C-l> :next<CR>
 map <C-h> :prev<CR>
+map <C-l> :next<CR>
 map <C-Left> <C-h>
 map <C-Right> <C-l>
 
@@ -115,11 +128,11 @@ packadd! justify
 augroup vimau
     au!
     autocmd FileType html setlocal nowrap
-    autocmd FileType markdown,pandoc,plain setlocal list
     autocmd FileType markdown setlocal syntax=pandoc
     autocmd VimEnter,WinEnter * if !exists('w:_vsc_conflict_marker_match') |
         \   let w:_vsc_conflict_marker_match = matchadd('ErrorMsg', '^\(<\|=\||\|>\)\{7\}\([^=].\+\)\?$') |
         \ endif
+    autocmd FileType javascript,javascript.jsx setlocal formatprg=prettier
 augroup end
 
 map <F2> :diffget 1<CR>
