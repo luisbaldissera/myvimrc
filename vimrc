@@ -113,8 +113,8 @@ map <Leader>gm :GitMessenger<CR>
 map <Leader>gl :Gclog<CR>
 map <Leader>gs :Git<CR>
 map <Leader>gd :Gdiffsplit<CR>
-map <Leader>gc :Git commit -m 
 map <Leader>gb :Git blame<CR>
+map <Leader>gp :Git push<CR>
 
 " Navigating in args
 map <C-h> :prev<CR>
