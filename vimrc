@@ -68,6 +68,7 @@ set cmdheight=1
 set expandtab
 set foldlevelstart=999
 set foldmethod=indent
+set foldtext=gitgutter#fold#foldtext()
 set hidden
 set ignorecase
 set incsearch
@@ -87,7 +88,6 @@ set shiftwidth=2
 set showmatch
 set splitbelow
 set splitright
-" set statusline=%f%m%h%r%{FugitiveStatusline()}
 set tabstop=2
 set wildmenu
 
