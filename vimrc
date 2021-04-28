@@ -41,7 +41,6 @@ let g:ale_fixers = {
 let g:coc_global_extensions = [
 \   'coc-css',
 \   'coc-docker',
-\   'coc-git',
 \   'coc-html',
 \   'coc-tabnine',
 \   'coc-yaml',
@@ -88,6 +87,7 @@ set shiftwidth=2
 set showmatch
 set splitbelow
 set splitright
+" set statusline=%f%m%h%r%{FugitiveStatusline()}
 set tabstop=2
 set wildmenu
 
