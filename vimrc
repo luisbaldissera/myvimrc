@@ -107,6 +107,15 @@ vmap <C-j> :global/^/move '>+1<CR>==gv
 vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
+" Git mappings
+map <Leader>gg :Git 
+map <Leader>gm :GitMessenger<CR>
+map <Leader>gl :Gclog<CR>
+map <Leader>gs :Git<CR>
+map <Leader>gd :Gdiffsplit<CR>
+map <Leader>gc :Git commit -m 
+map <Leader>gb :Git blame<CR>
+
 " Navigating in args
 map <C-h> :prev<CR>
 map <C-l> :next<CR>
