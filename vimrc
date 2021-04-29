@@ -63,6 +63,19 @@ if &t_Co > 2 || has("gui_running")
     set hlsearch
 endif
 
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
 set bg=dark
 set cmdheight=1
 set expandtab
@@ -88,6 +101,7 @@ set shiftwidth=2
 set showmatch
 set splitbelow
 set splitright
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-10{LinterStatus()}\ %-14.(%l,%c%V%)\ %P
 set tabstop=2
 set wildmenu
 
