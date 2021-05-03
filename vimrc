@@ -28,6 +28,8 @@ let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 
 " Assynchronous Linting Engine (ALE)
+let g:ale_sign_error = '✗'
+let g:ale_sign_info = 'Δ'
 let g:ale_completion_autoimport = 1
 let g:ale_linters = {
 \   'javascript': [ 'eslint' ],
@@ -36,6 +38,14 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \   'javascript': ['eslint', 'prettier']
 \}
+
+" Git gutter
+let g:gitgutter_sign_added='+'
+let g:gitgutter_sign_modified='~'
+let g:gitgutter_sign_removed='_'
+let g:gitgutter_sign_removed_first_line='‾'
+let g:gitgutter_sign_removed_above_and_below='='
+let g:gitgutter_sign_modified_removed='≃'
 
 " Coc default extensiosn
 let g:coc_global_extensions = [
