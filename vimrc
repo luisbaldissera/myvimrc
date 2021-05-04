@@ -167,6 +167,7 @@ augroup vimau
         \   let w:_vsc_conflict_marker_match = matchadd('ErrorMsg', '^\(<\|=\||\|>\)\{7\}\([^=].\+\)\?$') |
         \ endif
     autocmd FileType javascript,javascript.jsx setlocal formatprg=prettier
+    autocmd FileType git set foldmethod=syntax foldlevel=0
 augroup end
 
 map <F2> :diffget 1<CR>
