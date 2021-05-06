@@ -113,7 +113,7 @@ set splitbelow
 set splitright
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-10{LinterStatus()}\ %-14.(%l,%c%V%)\ %P
 set tabstop=2
-set updatetime=100
+set updatetime=200
 set wildmenu
 
 nmap <C-p> :FZF<CR>
