@@ -27,17 +27,19 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 
+" Indent line
+let g:indentLine_char = '▏'
+
+" Airline
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tagbar#flags = 'f'
+
 " Assynchronous Linting Engine (ALE)
 let g:ale_sign_error = '✗'
-let g:ale_sign_info = 'Δ'
+let g:ale_sign_info = 'ⓘ'
+let g:ale_sign_warning = 'Δ'
 let g:ale_completion_autoimport = 1
-let g:ale_linters = {
-\   'javascript': [ 'eslint' ],
-\   'python': [ 'pylint' ]
-\}
-let g:ale_fixers = {
-\   'javascript': ['eslint', 'prettier']
-\}
+let g:ale_fix_on_save = 1
 
 " Git gutter
 let g:gitgutter_sign_added='+'
@@ -86,8 +88,10 @@ function! LinterStatus() abort
     \)
 endfunction
 
+" Options
 set bg=dark
 set cmdheight=1
+set cursorline
 set expandtab
 set foldlevelstart=999
 set foldmethod=indent
@@ -113,7 +117,7 @@ set splitbelow
 set splitright
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-10{LinterStatus()}\ %-14.(%l,%c%V%)\ %P
 set tabstop=2
-set updatetime=200
+set updatetime=100
 set wildmenu
 
 nmap <C-p> :FZF<CR>
@@ -144,6 +148,9 @@ map <Leader>gs :Git<CR>
 map <Leader>gd :Gdiffsplit<CR>
 map <Leader>gb :Git blame<CR>
 map <Leader>gp :Git push<CR>
+
+" File tags
+map <Leader>t :Tagbar<CR>
 
 " Navigating in args
 map <C-h> :prev<CR>
