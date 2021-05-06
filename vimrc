@@ -132,6 +132,10 @@ vmap <C-j> :global/^/move '>+1<CR>==gv
 vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
+" Buff surf
+map ]b :BufSurfForward<CR>
+map [b :BufSurfBack<CR>
+
 " Git mappings
 map <Leader>gg :Git 
 map <Leader>gm :GitMessenger<CR>

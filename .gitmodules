@@ -79,3 +79,6 @@
 [submodule "pack/plugins/start/vim-bufsurf"]
 	path = pack/plugins/start/vim-bufsurf
 	url = https://github.com/ton/vim-bufsurf
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
