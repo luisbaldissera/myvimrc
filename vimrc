@@ -10,9 +10,6 @@ let g:goyo_width = '90%'
 
 let g:gruvbox_italic = 1
 
-let g:javascript_conceal_arrow_function = "⇒"
-let g:javascript_conceal_function = "ƒ"
-let g:javascript_conceal_return = "⇚"
 let g:javascript_plugin_jsdoc = 1
 
 let g:molokai_original = 1
@@ -35,11 +32,21 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#tagbar#flags = 'f'
 
 " Assynchronous Linting Engine (ALE)
+let g:ale_completion_autoimport = 1
+let g:ale_completion_enabled = 1
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 0
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
 let g:ale_sign_error = '✗'
 let g:ale_sign_info = 'ⓘ'
 let g:ale_sign_warning = 'Δ'
-let g:ale_completion_autoimport = 1
-let g:ale_fix_on_save = 1
+let g:ale_echo_cursor = 0
+let g:ale_pattern_options = { '\.min.js$': { 'ale_enabled': 0 } }
+let g:ale_floating_preview = 1
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 
 " Git gutter
 let g:gitgutter_sign_added='+'
