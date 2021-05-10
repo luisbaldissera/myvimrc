@@ -56,22 +56,6 @@ let g:gitgutter_sign_removed_first_line='‾'
 let g:gitgutter_sign_removed_above_and_below='='
 let g:gitgutter_sign_modified_removed='≃'
 
-" Coc default extensiosn
-let g:coc_global_extensions = [
-\   'coc-css',
-\   'coc-docker',
-\   'coc-html',
-\   'coc-tabnine',
-\   'coc-yaml',
-\   'coc-tsserver',
-\   'coc-sql',
-\   'coc-xml',
-\   'coc-json',
-\   'coc-java',
-\   'coc-go',
-\   'coc-solargraph'
-\]
-
 let &t_ut = ''
 
 if &t_Co > 1
@@ -117,6 +101,7 @@ set nolist
 set number
 set omnifunc=ale#completion#OmniFunc
 set path+=**
+set relativenumber
 set sessionoptions+=resize
 set shiftwidth=2
 set showmatch
@@ -127,6 +112,7 @@ set tabstop=2
 set updatetime=100
 set wildmenu
 
+" Fuzzy finder
 nmap <C-p> :FZF<CR>
 
 " Figlet
