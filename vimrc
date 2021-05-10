@@ -129,6 +129,9 @@ vmap <C-j> :global/^/move '>+1<CR>==gv
 vmap <C-Up> <C-k>
 vmap <C-Down> <C-j>
 
+" Executing command
+nmap <Leader>e :exec 'r!'.getline('.')<CR>
+
 " Buff surf
 map ]b :BufSurfForward<CR>
 map [b :BufSurfBack<CR>
