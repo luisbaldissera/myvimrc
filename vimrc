@@ -1,5 +1,6 @@
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
+source $HOME/.config/vim-calendar/config.vim
 
 filetype plugin on
 filetype plugin indent on
