@@ -3,3 +3,4 @@ git submodule foreach ' \
   echo "Indexing help files for $name in $toplevel ..."; \
   vim -u NONE --clean -c "helptags $toplevel/$sm_path/doc" -c "q" \
 '
+rm pack/plugins/start/git-messenger.vim/doc/tags
