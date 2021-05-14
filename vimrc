@@ -84,6 +84,7 @@ endfunction
 set bg=dark
 set cmdheight=1
 set cursorline
+set encoding=utf-8
 set expandtab
 set foldlevelstart=999
 set foldmethod=indent
