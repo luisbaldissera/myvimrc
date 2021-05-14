@@ -1,4 +1,4 @@
 :IndentLinesDisable
-set modifiable
-set fileencoding=utf8
-set nomodifiable
+setlocal modifiable
+set fileencoding=utf-8
+setlocal nomodifiable
