@@ -5,20 +5,23 @@ reconfigure vim. But you opensourcer are free to use it as you wish 😊.
 
 ## Pre-Requisites
 
-* Fuzzy Finder
-* FIGlet
-* Development Tools
-* GIT Version Control
-* Arduino Software. Visit [Arduino Webpage](https://www.arduino.cc/)
+* Fuzzy Finder (`fzf`)
+* Development Tools (`build-essential`)
+* GIT Version Control (`git`)
+* Ruby (`rbenv`)
+* Python (`pyenv`)
+* NPM (`npm`)
+* Node (`node`)
+* Arduino Software. Visit [Arduino Webpage](https://www.arduino.cc/) (`arduino-cli`)
 
-```sh
-sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install \
-    build-essential \
-    fzf \
-    figlet \
-    git
-```
+### NPM globals
+
+* `eslint`
+* `prettier`
+
+### GEM globals
+
+* `solargraph`
 
 ## Pre-configurations
 
@@ -56,5 +59,10 @@ function dirdiff()
     DIR1=$(printf '%q' "$1"); shift
     DIR2=$(printf '%q' "$1"); shift
     vim $@ -c "DirDiff $DIR1 $DIR2"
+}
+
+function calendar()
+{
+  vim -c "Calendar -month -task"
 }
 ```
