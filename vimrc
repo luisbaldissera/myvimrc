@@ -86,6 +86,7 @@ set cmdheight=1
 set cursorline
 set encoding=utf-8
 set expandtab
+set fillchars+=vert:│
 set foldlevelstart=999
 set foldmethod=indent
 set foldtext=gitgutter#fold#foldtext()
