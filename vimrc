@@ -1,6 +1,9 @@
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
+
+" Calendar
 source $HOME/.config/vim-calendar/config.vim
+let g:calendar_time_zone = "-0300"
 
 filetype plugin on
 filetype plugin indent on
@@ -140,13 +143,10 @@ map ]b :BufSurfForward<CR>
 map [b :BufSurfBack<CR>
 
 " Git mappings
-map <Leader>gg :Git 
-map <Leader>gm :GitMessenger<CR>
 map <Leader>gl :Gclog<CR>
 map <Leader>gs :Git<CR>
 map <Leader>gd :Gdiffsplit<CR>
 map <Leader>gb :Git blame<CR>
-map <Leader>gp :Git push<CR>
 
 " File tags
 map <Leader>t :Tagbar<CR>
