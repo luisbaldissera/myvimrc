@@ -88,3 +88,6 @@
 [submodule "pack/plugins/start/calendar.vim"]
 	path = pack/plugins/start/calendar.vim
 	url = https://github.com/itchyny/calendar.vim
+[submodule "pack/plugins/start/vim-liquid"]
+	path = pack/plugins/start/vim-liquid
+	url = https://github.com/tpope/vim-liquid
